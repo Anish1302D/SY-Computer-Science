@@ -1,2 +1,2 @@
 # SY-Computer-Science-DS
-Data Structure 
+Data Structure and Data Base Assignments
