@@ -7,10 +7,10 @@ CREATE TABLE departments(
 );
 
 CREATE TABLE employees(
-	emp_id SERIAL PRIMARY KEY,
+	   emp_id SERIAL PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
-    dept_id INT REFERENCES departments(dept_id),
-    salary NUMERIC(10,2) CHECK (salary >= 30000)
+    dept_id INT REFERENCES               departments(dept_id),
+    salary NUMERIC(10,2) CHECK (salary >=  30000)
 );
 
 SELECT * FROM departments;
