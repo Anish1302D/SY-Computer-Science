@@ -1,0 +1,4 @@
+John Manager 50000
+Alice Engineer 40000
+Bob Clerk 30000
+Eve Analyst 45000
