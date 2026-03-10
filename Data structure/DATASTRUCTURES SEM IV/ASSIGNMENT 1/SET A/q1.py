@@ -34,7 +34,7 @@ class HashTable:
 
 
 # -------- Main Program --------
-size = int(input("Enter size of hash table: "))
+size = 5
 hash_table = HashTable(size)
 
 while True:
@@ -57,3 +57,4 @@ while True:
 
     else:
         print("Invalid choice! Try again.")
+
