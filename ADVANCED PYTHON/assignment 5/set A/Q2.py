@@ -1,0 +1,9 @@
+import numpy as np
+
+matrix = np.ones((3,3))
+
+print("Matrix:\n", matrix)
+
+total = np.sum(matrix)
+
+print("Sum =", total)
