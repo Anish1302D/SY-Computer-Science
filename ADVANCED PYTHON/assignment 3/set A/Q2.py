@@ -11,5 +11,15 @@ class Car(Vehicle):
 v = Vehicle()
 c = Car()
 
-v.start()
-c.start()
+print("Enter ur choice :")
+print("1. Vehicle")
+print("2. Car")
+
+choice = int(input("Enter 1 or 2 :-"))
+
+if choice == 1:
+    v.start()
+elif choice == 2:
+    c.start()
+else:
+    print("Invalid choice ")
