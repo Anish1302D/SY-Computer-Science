@@ -1,8 +1,6 @@
-from abc import ABC, abstractmethod
-
+from abc import ABC
 
 class Database(ABC):
-
     @abstractmethod
     def connect(self):
         pass
@@ -11,18 +9,17 @@ class Database(ABC):
     def disconnect(self):
         pass
 
+    def __del__(self):
+        self.disconnect()
 
 class MySQLDatabase(Database):
-
     def connect(self):
-        print("Database Connected")
+        print("Database connected")
 
     def disconnect(self):
-        print("Database Connection Closed")
-
+        print("Database connection closed")
 
 db = MySQLDatabase()
-
 db.connect()
 
 del db
